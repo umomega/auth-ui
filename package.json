@@ -1,0 +1,34 @@
+{
+    "name": "umomega-auth",
+    "version": "1.5.0",
+    "description": "Auth UI Components For umΩ Apps",
+    "main": "auth-ui.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/umomega/auth-ui.git"
+    },
+    "keywords": [
+        "umomega",
+        "ui",
+        "auth",
+        "front-end",
+        "js"
+    ],
+    "author": {
+        "name": "Egemen Berker Kızılcan",
+        "email": "egemen@umomega.com",
+        "url": "https://umomega.com"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/umomega/auth-ui/issues"
+    },
+    "homepage": "https://github.com/umomega/auth-ui#readme",
+    "files": [
+        "js",
+        "LICENSE",
+        "README.md",
+        "auth-ui.js"
+    ],
+    "dependencies": {}
+}
