@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import {View, Datable, DatableDropdown} from "umomega-foundation";
+import {View, Datable, DatableDropdown} from 'umomega-foundation'
 
 export default {
 	mixins: [ View ],

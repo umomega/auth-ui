@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import {View, Datable, DatableDropdown, format_date, RequiresPermissions} from "umomega-foundation";
+import {View, Datable, DatableDropdown, format_date, RequiresPermissions} from 'umomega-foundation'
 
 export default {
 	mixins: [ View, RequiresPermissions ],

@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import {View, Shower, Tabs, Datable, DatableDropdown, format_date, RequiresPermissions} from "umomega-foundation";
+import {View, Shower, Tabs, Datable, DatableDropdown, format_date, RequiresPermissions} from 'umomega-foundation'
 
 export default {
 	mixins: [ View, RequiresPermissions, Shower ],

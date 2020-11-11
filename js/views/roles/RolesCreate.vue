@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import {View, Storer, FormBody, Form, SubmitFooter, RequiresPermissions } from "umomega-foundation";
+import {View, Storer, FormBody, Form, SubmitFooter, RequiresPermissions } from 'umomega-foundation'
 
 export default {
 	mixins: [ View, Storer, RequiresPermissions ],

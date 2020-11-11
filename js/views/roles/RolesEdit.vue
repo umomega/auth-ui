@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import {View, Updater, Shower, Tabs, FormBody, Form, SubmitFooter, RequiresPermissions} from "umomega-foundation";
+import {View, Updater, Shower, Tabs, FormBody, Form, SubmitFooter, RequiresPermissions} from 'umomega-foundation'
 
 export default {
 	mixins: [ View, Updater, Shower, RequiresPermissions ],

@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import {View, Tabs, FormBody, Form, SubmitFooter, assess_error} from "umomega-foundation";
+import {View, Tabs, FormBody, Form, SubmitFooter, assess_error} from 'umomega-foundation'
 
 export default {
 	mixins: [ View ],
