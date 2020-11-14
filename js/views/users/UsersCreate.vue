@@ -1,6 +1,6 @@
 <template>
 	<div :class="isLoaded ? 'paper reveal is-loaded' : 'paper reveal'">
-		<form method="POST" action="/api/users" @submit.prevent="requestStore('users', 'users.edit')" @keydown="form.errors.clear($event.target.name)" autocomplete="off">
+		<form method="POST" action="/api/users" @submit.prevent="requestStore('users', 'users.edit')" autocomplete="off">
 			
 			<div class="paper__body paper__body--noside">
 				<div class="paper__main">

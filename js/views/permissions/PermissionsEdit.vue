@@ -10,7 +10,7 @@
 		]"></tabs>
 
 		<div class="paper">
-			<form method="POST" action="/api/permissions" @submit.prevent="requestUpdate('permissions')" @keydown="form.errors.clear($event.target.name)" autocomplete="off">
+			<form method="POST" action="/api/permissions" @submit.prevent="requestUpdate('permissions')" autocomplete="off">
 				
 				<div class="paper__body paper__body--noside">
 					<div class="paper__main">

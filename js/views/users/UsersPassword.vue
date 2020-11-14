@@ -11,7 +11,7 @@
 		]"></tabs>
 
 		<div class="paper">
-			<form method="POST" action="/api/users/password" @submit.prevent="requestUpdate('users/password')" @keydown="form.errors.clear($event.target.name)" autocomplete="off">
+			<form method="POST" action="/api/users/password" @submit.prevent="requestUpdate('users/password')" autocomplete="off">
 				
 				<div class="paper__body paper__body--noside">
 					<div class="paper__main">

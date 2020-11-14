@@ -11,7 +11,7 @@
 		]"></tabs>
 
 		<div class="paper is-padded">
-			<form method="POST" action="/api/profile/password" @submit.prevent="onSubmit" @keydown="form.errors.clear($event.target.name)" autocomplete="off">
+			<form method="POST" action="/api/profile/password" @submit.prevent="onSubmit" autocomplete="off">
 				<div class="paper__body paper__body--noside">
 					<div class="paper__main">
 						<FormBody :schema="schema" v-model="form" :readonly="false"/>
