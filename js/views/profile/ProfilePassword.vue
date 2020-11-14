@@ -12,7 +12,7 @@
 
 		<div class="paper is-padded">
 			<form method="POST" action="/api/profile/password" @submit.prevent="onSubmit" @keydown="form.errors.clear($event.target.name)" autocomplete="off">
-				<div class="paper__body">
+				<div class="paper__body paper__body--noside">
 					<div class="paper__main">
 						<FormBody :schema="schema" v-model="form" :readonly="false"/>
 					</div>
@@ -44,7 +44,8 @@ export default {
 				type: 'PasswordField',
 				name: 'password',
 				label: this.$root.trans.get('validation.attributes.new_password'),
-				options: {meter: true, required: true}
+				options: {meter: true, required: true},
+				hint: this.$root.trans.get('auth::auth.hint_password')
 			}
 		]
 	}},

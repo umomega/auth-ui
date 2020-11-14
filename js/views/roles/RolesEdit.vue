@@ -12,7 +12,7 @@
 		<div class="paper">
 			<form method="POST" action="/api/roles" @submit.prevent="requestUpdate('roles')" @keydown="form.errors.clear($event.target.name)" autocomplete="off">
 				
-				<div class="paper__body">
+				<div class="paper__body paper__body--noside">
 					<div class="paper__main">
 						<FormBody :schema="schema" v-model="form"/>
 					</div>

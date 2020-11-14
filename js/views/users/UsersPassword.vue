@@ -13,7 +13,7 @@
 		<div class="paper">
 			<form method="POST" action="/api/users/password" @submit.prevent="requestUpdate('users/password')" @keydown="form.errors.clear($event.target.name)" autocomplete="off">
 				
-				<div class="paper__body">
+				<div class="paper__body paper__body--noside">
 					<div class="paper__main">
 						<FormBody :schema="schema" v-model="form" :readonly="!$can('write_users')"/>
 					</div>
@@ -45,7 +45,8 @@ export default {
 				type: 'PasswordField',
 				name: 'password',
 				label: this.$root.trans.get('validation.attributes.password'),
-				options: {meter: true}
+				options: {meter: true},
+				hint: this.$root.trans.get('auth::auth.hint_password')
 			}
 		]
 	}}
