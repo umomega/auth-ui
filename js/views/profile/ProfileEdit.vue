@@ -74,7 +74,7 @@ export default {
 			this.form.put(api_url('profile'))
 				.then(function(data) { 
 					Fetcher.fetchUser()
-					self.notifier.success(data.message);
+					self.notifier.success(data.message)
 				})
 				.catch(function(error) {
 					self.notifier.danger(self.trans.get('foundation::general.errors_saving'))

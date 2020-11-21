@@ -60,19 +60,21 @@ export default {
 	}},
 	methods: {
 		makeMailableLink(mail) {
-			return 'mailto:' + mail;
+			return 'mailto:' + mail
 		},
 		makeReadableDate(date) {
-			return format_date(date);
+			return format_date(date)
 		},
 		revoke(id) {
-			var self = this;
+			var self = this
 			
 			axios.delete(api_url('permissions/' + this.resource.id + '/users/' + id))
 				.then(function(response) {
-					self.notifier.success(response.data.message);
-					Event.$emit('resources-deleted', {});
-				});
+					self.notifier.success(response.data.message)
+					Event.$emit('resources-deleted', {})
+
+					if(response.data.event) Event.$emit(response.data.event)
+				})
 		}
 	}
 }

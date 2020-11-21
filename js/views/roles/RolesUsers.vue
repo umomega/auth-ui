@@ -60,7 +60,7 @@ export default {
 	}},
 	methods: {
 		makeMailableLink(mail) {
-			return 'mailto:' + mail;
+			return 'mailto:' + mail
 		},
 		makeReadableDate(date) {
 			return format_date(date);
@@ -70,9 +70,11 @@ export default {
 			
 			axios.delete(api_url('roles/' + this.resource.id + '/users/' + id))
 				.then(function(response) {
-					self.notifier.success(response.data.message);
-					Event.$emit('resources-deleted', {});
-				});
+					self.notifier.success(response.data.message)
+					Event.$emit('resources-deleted', {})
+
+					if(response.data.event) Event.$emit(response.data.event)
+				})
 		}
 	}
 }

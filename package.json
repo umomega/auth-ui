@@ -1,6 +1,6 @@
 {
     "name": "umomega-auth",
-    "version": "1.6.3",
+    "version": "1.6.4",
     "description": "Auth UI Components For umΩ Apps",
     "main": "auth-ui.js",
     "repository": {
