@@ -34,7 +34,7 @@ export default {
 	components: { Tabs, FormBody, SubmitFooter },
 	data() { return {
 		titleLabel: 'auth::users.update_profile',
-		form: new Form({first_name: '', last_name: '', email: ''}),
+		form: new Form({first_name: '', last_name: '', email: '', locale: this.$root.appLocale}),
 		schema: [
 			{
 				type: 'EmailField',
@@ -54,8 +54,19 @@ export default {
 				name: 'last_name',
 				label: this.$root.trans.get('validation.attributes.last_name'),
 				options: {required: true}
+			},
+			{
+				type: 'SelectField',
+				name: 'locale',
+				label: this.$root.trans.get('validation.attributes.locale'),
+				options: {
+					required: true,
+					choices: [
+						{ value: 'en', label: 'English'},
+						{ value: 'tr', label: 'Türkçe'},
+					]
+				}
 			}
-			
 		]
 	}},
 	created() {

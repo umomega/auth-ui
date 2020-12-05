@@ -39,7 +39,7 @@ export default {
 		],
 		guardedBy: 'read_users',
 		showRoute: 'users',
-		form: new Form({first_name: '', last_name: '', email: '', roles_list: [], permissions_list: []}),
+		form: new Form({first_name: '', last_name: '', email: '', roles_list: [], permissions_list: [], locale: this.$root.appLocale}),
 		schema: [
 			{
 				type: 'EmailField',
@@ -73,6 +73,18 @@ export default {
 				label: this.$root.trans.get('auth::permissions.multiple'),
 				placeholder: this.$root.trans.get('auth::permissions.search'),
 				options: {multiple: true, searchroute: 'permissions/search'}
+			},
+			{
+				type: 'SelectField',
+				name: 'locale',
+				label: this.$root.trans.get('validation.attributes.locale'),
+				options: {
+					required: true,
+					choices: [
+						{ value: 'en', label: 'English'},
+						{ value: 'tr', label: 'Türkçe'},
+					]
+				}
 			}
 		]
 	}}
