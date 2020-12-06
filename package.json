@@ -1,6 +1,6 @@
 {
     "name": "umomega-auth",
-    "version": "1.7.0",
+    "version": "1.7.1",
     "description": "Auth UI Components For umΩ Apps",
     "main": "auth-ui.js",
     "repository": {
@@ -30,5 +30,7 @@
         "README.md",
         "auth-ui.js"
     ],
-    "dependencies": {}
+    "dependencies": {
+        "umomega-foundation": "^1.19.6"
+    }
 }
